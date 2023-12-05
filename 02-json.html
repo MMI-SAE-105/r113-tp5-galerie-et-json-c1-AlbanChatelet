@@ -27,14 +27,15 @@
             projet:'Tailwind CSS',
             url: 'https://tailwindcss.com/'
         }
-]
-    
-
-
-
-
-
-    }></ul>
+],
+}">
+    <template x-for='obj in data'>
+        <li>
+            <span x-text="obj.nom">nom</span> : 
+                <a :href="obj.url" x-text="obj.projet">projet</a>
+        </li>
+    </template>
+</ul>
     
 </body>
 </html>

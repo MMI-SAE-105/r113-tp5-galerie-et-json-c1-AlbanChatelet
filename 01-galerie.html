@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <style>
@@ -55,8 +56,9 @@
 }">
     
     <h1>Galerie</h1>
+        
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur totam, nostrum, temporibus ea architecto hic suscipit, similique animi itaque quidem nobis doloremque minus. Ullam magnam explicabo optio non, cum tempora.</p>
-    <div class="overlay">
+    <div class="overlay" x-show="menuIsOpen" x-transition.duration.800ms>
         <figure><img src="https://picsum.photos/id/237/200/300" alt="image 237... un chiot"></figure>
     </div>
 

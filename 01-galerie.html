@@ -59,7 +59,12 @@
         
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur totam, nostrum, temporibus ea architecto hic suscipit, similique animi itaque quidem nobis doloremque minus. Ullam magnam explicabo optio non, cum tempora.</p>
     <div class="overlay" x-show="imageAffiche" x-transition.duration.800ms @click="imageAffiche = null" @keyup.escape.window="imageAffiche = null">
-        <figure><img src="https://picsum.photos/id/237/200/300" alt="image 237... un chiot"></figure>
+        <figure><img src="https://picsum.photos/id/237/300/400" alt="image 237... un chiot">
+                <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
+                    @click="imageAffiche = 'https://picsum.photos/id/236/40/60'">
+                <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+                    @click="imageAffiche = 'https://picsum.photos/id/237/40/60'">
+        </figure>
     </div>
 
    

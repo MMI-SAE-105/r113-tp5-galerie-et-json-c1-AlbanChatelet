@@ -58,7 +58,7 @@
     <h1>Galerie</h1>
         
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur totam, nostrum, temporibus ea architecto hic suscipit, similique animi itaque quidem nobis doloremque minus. Ullam magnam explicabo optio non, cum tempora.</p>
-    <div class="overlay" x-show="menuIsOpen" x-transition.duration.800ms>
+    <div class="overlay" x-show="imageAffiche" x-transition.duration.800ms @click="imageAffiche = null">
         <figure><img src="https://picsum.photos/id/237/200/300" alt="image 237... un chiot"></figure>
     </div>
 

@@ -52,22 +52,22 @@
 
 
 <body x-data="{
-    imageAffiche: 'https://picsum.photos/id/237/200/300'
+    imageAffiche: 'https://m.media-amazon.com/images/I/61JGBVpQEqL._AC_UF1000,1000_QL80_.jpg'
 }">
     
     <h1>Galerie</h1>
         
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur totam, nostrum, temporibus ea architecto hic suscipit, similique animi itaque quidem nobis doloremque minus. Ullam magnam explicabo optio non, cum tempora.</p>
+    <p>Glaerie de pochettes d'album de rap américain moderne, tout droit venu d'Atlanta avec DS4EVER de Gunna et Culture de Migos</p>
     <div class="overlay" x-show="imageAffiche" x-transition.duration.800ms @click="imageAffiche = null" @keyup.escape.window="imageAffiche = null">
         <figure><img :src="imageAffiche">
                 
         </figure>
     </div>
 
-    <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
-        @click="imageAffiche = 'https://picsum.photos/id/236/200/300'">
-    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
-        @click="imageAffiche = 'https://picsum.photos/id/237/200/300'">
+    <img src="https://m.media-amazon.com/images/I/61JGBVpQEqL._AC_UF100,100_QL80_.jpg" alt="ds4ever"
+        @click="imageAffiche = 'https://m.media-amazon.com/images/I/61JGBVpQEqL._AC_UF500,500_QL80_.jpg'">
+    <img src="https://m.media-amazon.com/images/I/91rSGmDGMtL._UF100,100_QL80_.jpg" alt="Culture"
+        @click="imageAffiche = 'https://m.media-amazon.com/images/I/91rSGmDGMtL._UF500,500_QL80_.jpg'">
 
    
 </body>
